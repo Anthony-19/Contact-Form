@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Contact form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" class="form">
+            <h2 class="form-header">Contact Us</h2>
+            <div class="form-group user-name">
+                <div class="form-name">
+                    <label for="first-name" class="first-name">First Name *</label>
+                    <input type="text" id="first-name">
+                    <div class="error">
+                        
+                    </div>
+                </div>
+                <div class="form-name">
+                    <label for="last-name" class="last-name">Last Name *</label>
+                    <input type="text" id="last-name">
+                    <div class="error">
+                        
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group email-address">
+                <label for="email" class="email">Email Address *</label>
+                <input type="email" id="email">
+                <div class="error">
+                 
+                </div>
+            </div>
+            <div class="form-group query-type">
+                <label for="query-header">Query type *</label>
+                <div class="query-type-list">
+                    <div class="general-enquiry">
+                        <input type="radio" id="enquiry" name="query-type">
+                        <label for="enquiry" class="enquiry">
+                            <span class="radio-btn"></span>
+                            General Enquiry
+                        </label>
+                    </div>
+                    <div class="support-request">
+                        <input type="radio" id="request" name="query-type">
+                        <label for="request" class="request">
+                            <span class="radio-btn"></span>
+                            Support Request
+                        </label>
+                    </div>
+                </div>
+                <div class="error">
+                   
+                </div>
+            </div>
+            <div class="form-group form-messages">
+                <label for="message" class="message">Message *</label>
+                <textarea name="message" id="message" rows="10" cols="10"></textarea>
+                <div class="error">
+                    
+                </div>
+            </div>
+
+            <div class="form-group form-consent">
+                <input type="checkbox" id="consent" name="checkbox">
+                <label for="consent" class="consent">
+                    <span class="check-btn"></span>
+                    I consent to being contacted by the team *
+                </label>
+                <div class="error">
+                    
+                </div>
+            </div>
+            <button class="submit">Submit</button>
+
+          
+        </form>
+        <div class="toast">
+            <div class="toast-message">
+                <h3 class="message-sent">
+                    <i class="fa-regular fa-circle-check"></i>
+                    Message Sent!
+                </h3>
+                <p class="form-complete">Thanks for completing the form. We'll be in touch soon!</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
